@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Тут також присутні команди для вирішення проблем з українськими буквами
 namespace ЛБ_1
 {
     //Тут Класобдж(Клас об'єкту) реалізує інтерфейс Іобдж
     internal class ClassObj:Iobj
     {
-        public string Name { get; set; }
-        public string Size { get; set; }
+        public string Name { get; set; } //Ім'я об'єкту чи предмету
+        public string Size { get; set; } //Розмір об'єкту чи предмету
 
-        public string Attribute { get; set; }
+        public string Attribute { get; set; } //Атрибут об'єкту чи предмету
         // Метод для введення назви об'єкту, чи предмету
         public void Nv()
         {
@@ -34,6 +34,7 @@ namespace ЛБ_1
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             if (this.Attribute == null)
             {
+                //Тут я зробив щоб користувач міг вибрати один із атрибутів, для різновиду, а то монотомний код нудний
                 Console.WriteLine("Введіть Атрибути:  \n Якщо предмет металевий введіть (м) \n Якщо предмет паперовий введіть (п) \n Якщо предмет гумовий введіть (г) \n Якщо предмет скляний введіть (с) \n Якщо предмет з дерева введіть (д)");
                 this.Attribute = Console.ReadLine();
                 switch(this.Attribute)
@@ -57,7 +58,7 @@ namespace ЛБ_1
                 }
             }
         }
-        //Ця команда встановлює метод по виведеню тексту
+        //Ця команда встановлює метод по виведеню тексту, тоюто виводить все що користувач написав
         public void Wi()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
