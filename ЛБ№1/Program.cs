@@ -7,6 +7,7 @@ namespace LB
     {
         static void Main(string[] args)
         {
+            // Встановлюємо кодування для вводу та виводу
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.UTF8;
             //Ця команда активує перший клас(головний)
