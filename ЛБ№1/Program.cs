@@ -9,7 +9,7 @@ namespace LB
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.UTF8;
-
+            //Ця команда активує перший клас(головний)
             Console.WriteLine("Напишіть назву першого предмету:");
             var obj1 = new ClassObj();
             obj1.Nv();
