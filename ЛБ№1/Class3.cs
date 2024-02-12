@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ЛБ_1
 {
+    // Оголошення класу ClassObjChild, який успадковує від ClassObj, тобто це дочірній клас а перший клас це батьківський
     internal class ClassObjChild : ClassObj
     {
         public string AdditionalAttribute { get; set; }
-
+        // Метод для встановлення додаткового атрибуту об'єкту, він дадається до 1 класу разом з наслідувальними методами
         public void AdditionalMethod()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -17,7 +18,7 @@ namespace ЛБ_1
             this.AdditionalAttribute = Console.ReadLine();
             Console.WriteLine("Цей метод виконує додаткову функцію для наслідувального об'єкту ");
         }
-
+        // Метод для виведення інформації про наслідувальний об'єкт,як і у всіх інших
         public void Wi()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
