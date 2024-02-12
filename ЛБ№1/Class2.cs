@@ -9,10 +9,10 @@ namespace ЛБ_1
     //Тут Класобдж2(Клас другого об'єкту) реалізує інтерфейс Іобдж, у відміності від першого класу тут можна написати будь який атрибут
     internal class ClassObj2 : Iobj
     {
-        public string Name { get; set; }
-        public string Color { get; set; }
+        public string Name { get; set; } //Назва об'єкту
+        public string Color { get; set; } //Колір об'єкту
         
-        public string Attr {  get; set; }
+        public string Attr {  get; set; } //Атрибут об'єкту
 
         // Метод для надання імені об'єкту
         public void Nv()
