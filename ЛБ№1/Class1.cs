@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace ЛБ_1
 {
+    //Тут Класобдж(Клас об'єкту) реалізує інтерфейс Іобдж
     internal class ClassObj:Iobj
     {
         public string Name { get; set; }
         public string Size { get; set; }
 
         public string Attribute { get; set; }
+        // Метод для введення назви об'єкту, чи предмету
         public void Nv()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -26,6 +28,7 @@ namespace ЛБ_1
                 this.Size = Console.ReadLine();
             }
         }
+        //Ця команда встановлює метод для надання атрибутів по вибору
         public void At() 
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -54,6 +57,7 @@ namespace ЛБ_1
                 }
             }
         }
+        //Ця команда встановлює метод по виведеню тексту
         public void Wi()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
