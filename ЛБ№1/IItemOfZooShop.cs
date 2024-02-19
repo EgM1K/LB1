@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace ЛБ_1
 {
     // Оголошення інтерфейсу Iobj
-    internal interface Iobj
+    internal interface IItemOfZooShop
     {
         // Метод для встановлення назви чи імені об'єкта (Name Value)
-        public void Nv();
+        public void ReadValues();
         // Метод для встановлення атрибутів (Attributes)
-        public void At();
+        public void AttributeBasic();
         // Метод для виведення інформації (Write Info)
-        public void Wi();
+        public void AllWriteInfo();
     }
 }

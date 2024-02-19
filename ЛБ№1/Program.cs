@@ -12,34 +12,33 @@ namespace LB
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.UTF8;
             //Ця команда активує перший клас (батьківський)
-            Console.WriteLine("Напишіть назву першого предмету:");
-            var obj1 = new ClassObj();
-            obj1.Nv();
-            obj1.At();
-            obj1.Wi();
+            Console.Write("Напишіть назву першого предмету: ");
+            var obj1 = new NotMatterialPredmdet();
+            obj1.ReadValues();
+            obj1.AttributeBasic();
+            obj1.AllWriteInfo();
             Console.Clear();
             //Ця команда активує другий клас
-            Console.WriteLine("Напишіть назву другого предмету:");
-            var obj2 = new ClassObj2();
-            obj2.Nv();
-            obj2.At();
-            obj2.Wi();
+            Console.Write("Напишіть ім'я кота: ");
+            var obj2 = new Cats();
+            obj2.ReadValues();
+            obj2.AttributeBasic();
+            obj2.IAllWriteInfo();
             Console.Clear();
             //Ця команда активує третій клас (дочірній)
-            Console.WriteLine("Напишіть назву третього предмету:");
-            var obj3 = new ClassObjChild();
-            obj3.Nv();
-            obj3.At();
-            obj3.AdditionalMethod();
-            obj3.Wi();
+            Console.Write("Напишіть ім'я собаки: ");
+            var obj3 = new Dogs();
+            obj3.ReadValues();
+            obj3.AttributeBasic();
+            obj3.IAllWriteInfo();
             Console.Clear();
             //Ця команда виводить всі об'єкти після заверщення вводу всіх даних
-            Console.WriteLine("Інформація про всі об'єкти:\n");
-            obj1.Wi();
+            Console.WriteLine("Інформація про всі об'єкти: \n");
+            obj1.AllWriteInfo();
             Console.WriteLine("\n------------------------\n");
-            obj2.Wi();
+            obj2.IAllWriteInfo();
             Console.WriteLine("\n------------------------\n");
-            obj3.Wi();
+            obj3.IAllWriteInfo();
         }
     }
 }
